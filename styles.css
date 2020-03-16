@@ -1,0 +1,212 @@
+@font-face {
+    src: url(gstan.otf) format('truetype');
+    font-family: 'Stan';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url(gstan_i.otf) format('truetype');
+    font-family: 'Stan';
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    src: url(gstan_g.otf) format('truetype');
+    font-family: 'Stan';
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    src: url(gstan_gi.otf) format('truetype');
+    font-family: 'Stan';
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    src: url(estan.otf) format('truetype');
+    font-family: 'StanSans';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url(estan_g.otf) format('truetype');
+    font-family: 'StanSans';
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    src: url(sstan.otf) format('truetype');
+    font-family: 'StanScript';
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font: 13.5pt/25px Stan;
+    color: black;
+}
+
+#page {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    padding: 4em 0 8em 0;
+}
+
+h1, h2 {
+    font: bold 14pt/18pt StanSans;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2em;
+}
+
+h1 span {
+    font: inherit;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+h1.classe {
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+dt {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font: normal 14pt/18pt StanSans;
+}
+
+hr {
+    border: 1px solid white;
+    margin: 20px;
+}
+
+em {
+    font-size: inherit;
+    font-style: italic;
+}
+
+.fluo {
+    padding: 1px 3px;
+    background-color: #f7ee1b;
+}
+
+.cadre {
+    display: inline-block;
+    position: relative;
+    left: 1em;
+    width: auto;
+    margin: 1.5em 0;
+    padding: 0 3em 0 1em;
+    border: 1px solid black;
+}
+
+.reference {
+    text-align: right;
+    font: 11pt/18pt StanSans;
+}
+
+.commentaire {
+    display: none;
+    margin: 1.5em 3em 2em 3em;
+    font-family: StanSans;
+    color: #d61a3e;
+}
+
+.phonetique, .phonetique * {
+    font-family: StanSans;
+    letter-spacing: 1px;
+}
+
+.phonetique u {
+    padding-bottom: 1px;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+span[title] {
+    border-bottom: 1px dashed silver;
+    cursor: help;
+}
+
+span[title]:after {
+    content: '*';
+    color: grey;
+    padding-left: 1px;
+    border-bottom: 1px solid white;
+}
+
+a {
+    color: #0064D9;
+    text-decoration: none;
+    border-bottom: 1px solid #0064D9;
+}
+
+a.bouton, button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+    font: bold 11pt StanSans;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 3px 8px;
+    color: white;
+}
+
+textarea,
+input[type="text"],
+input[type="number"] {
+    outline: none;
+    border: none;
+    background-image: url(img/point.png);
+    background-size: 5px 25px;
+    background-attachment: local;
+    font: inherit;
+    color: #0064D9;
+}
+
+textarea {
+    width: 100%;
+    min-height: 75px;
+    resize: vertical;
+}
+
+select {
+    font: inherit;
+	display: inline-block;
+	line-height: 1.5;
+	padding: 0;
+	width: auto;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0 0.3em;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	background-image: url(img/point.png),
+	  linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+	background-repeat: repeat-x, repeat;
+	background-position: bottom left, 0 0;
+	background-size: 5px 25px, 100%;
+    color: #0064D9;
+}
+
+select:focus {
+    outline: none;
+}
+
+.reponse.correcte { color: #3caf52; }
+.reponse.incorrecte { color: #d61a3e; }
